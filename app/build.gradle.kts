@@ -40,13 +40,13 @@ android {
 }
 
 dependencies {
-
     implementation(project(":feature:feature-a"))
     implementation(project(":feature:feature-b"))
+    implementation(project(":core:android"))
+    implementation(project(":core:commons"))
+    implementation(project(":core:kotlin"))
     implementation(project(":core:navigation"))
     implementation(project(":core:network"))
-    implementation(project(":core:kotlin"))
-    implementation(project(":core:android"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
